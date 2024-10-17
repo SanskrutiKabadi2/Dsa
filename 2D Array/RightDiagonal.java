@@ -1,0 +1,36 @@
+import java.util.*;
+class RightDiagonal{
+        public static void main(String[] args){
+                Scanner Sc=new Scanner(System.in);
+                System.out.println("Enter the size : ");
+                int n=Sc.nextInt();
+                int arr[][]=new int[n][n];
+                System.out.println("Enter the elements : ");
+                for(int i=0;i<n;i++){
+                        for(int j=0;j<n;j++){
+                                arr[i][j]=Sc.nextInt();
+                        }
+
+		}
+		System.out.println("Array  : ");
+		 for(int i=0;i<n;i++){
+                        for(int j=0;j<n;j++){
+                                System.out.print(arr[i][j]+" ");
+                        }
+			  System.out.println();
+
+
+                }
+                System.out.println("Right Diagonal : ");
+                for(int i=0;i<n;i++){
+                        for(int j=0;j<n;j++){
+                                 if(i+j==n-1){
+                                        System.out.print(arr[i][j]+" ");
+                                        break;
+                                }
+                        }
+                        System.out.println();
+
+                }
+        }
+}
